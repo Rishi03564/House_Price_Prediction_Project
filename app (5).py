@@ -46,7 +46,7 @@ with col2:
 st.markdown("---")
 
 # Predict button
-if st.button("🔮 Predict House Value", type="primary"):
+if st.button(" Predict House Value", type="primary"):
     # 1. Structure the features into a DataFrame with the correct column names
     feature_names = ["MedInc", "HouseAge", "AveRooms", "AveBedrms", "Population", "AveOccup", "Latitude", "Longitude"]
     input_df = pd.DataFrame([[med_inc, house_age, ave_rooms, ave_bedrms, population, ave_occup, latitude, longitude]], columns=feature_names)
@@ -62,6 +62,6 @@ if st.button("🔮 Predict House Value", type="primary"):
     actual_price = prediction * 100000
 
     if actual_price < 0:
-        st.warning("⚠️ The model predicted an extreme negative valuation based on these out-of-bounds parameters. Try entering more realistic regional coordinates or metrics.")
+        st.warning(" The model predicted an extreme negative valuation based on these out-of-bounds parameters. Try entering more realistic regional coordinates or metrics.")
     else:
-        st.success(f"### Estimated Median House Value: **${actual_price:,.2f}**")
+        st.success(f"### Estimated Median House Value: **₹{actual_price:,.2f}**")
