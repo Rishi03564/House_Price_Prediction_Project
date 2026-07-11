@@ -24,7 +24,7 @@ except FileNotFoundError:
     st.stop()
 
 # App UI Header
-st.title("🏡 California House Price Prediction App")
+st.title("California House Price Prediction App")
 st.markdown("Enter the region's metrics below to estimate the median house value.")
 st.markdown("---")
 
