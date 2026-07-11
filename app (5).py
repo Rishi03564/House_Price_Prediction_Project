@@ -32,7 +32,7 @@ st.markdown("---")
 col1, col2 = st.columns(2)
 
 with col1:
-    med_inc = st.number_input("Median Income (in tens of thousands, e.g., 3.5 = $35,000)", min_value=0.0, max_value=15.0, value=3.5, step=0.1)
+    med_inc = st.number_input("Median Income (in tens of thousands, e.g., 3.5 = ₹35,000)", min_value=0.0, max_value=15.0, value=3.5, step=0.1)
     house_age = st.number_input("Median House Age", min_value=1.0, max_value=100.0, value=28.0, step=1.0)
     ave_rooms = st.number_input("Average Rooms per Household", min_value=1.0, max_value=50.0, value=5.0, step=0.1)
     ave_bedrms = st.number_input("Average Bedrooms per Household", min_value=1.0, max_value=20.0, value=1.0, step=0.1)
